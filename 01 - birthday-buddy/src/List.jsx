@@ -1,8 +1,13 @@
+import Persons from "./Persons"
 
-const List = ({people}) => {
+const List = ({people, deleteDate}) => {
   return (
     <section>
-      {people.map( () => )}
+      {people.map( (person) => <Persons 
+      deleteDate = {deleteDate} 
+      key={person.id} 
+      person = {person}
+      />)}
     </section>
   )
 }

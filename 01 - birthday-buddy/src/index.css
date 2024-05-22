@@ -7,8 +7,9 @@
 
 body{
   background-color: rgb(223, 247, 255);
-  display: flex;
-  justify-content: center;
+display: grid;
+place-items: center;
+
 }
 
 .container{
@@ -16,5 +17,98 @@ body{
   width: 35rem;
   border-radius: 0.2rem;
   background-color: white;
-  padding: 30px;
+  padding:24px 32px;
+  margin:80px 0px;
+}
+
+h3{
+  letter-spacing: 1.5px;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0px 0px 32px;
+}
+
+.person{
+
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.image-bio-container{
+  display: flex;
+  align-items: center;
+   column-gap: 10px;
+}
+
+.image-person{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.bio-data-container{
+  display: grid;
+  row-gap: 5px;
+}
+
+.btn{
+  width: 100%;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px 0px;
+  color: white;
+  background-color:#d946ef;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.name{
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.date-of-birth{
+  color: lightslategray;
+}
+
+.btn-delete{
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 2px 15px;
+  background-color: lightslategray;
+  border-radius: 0.2rem;
+  font-size: 16px;
+  color: white;
+  transition: 0.25s;
+  border: 2px solid black;
+}
+
+.btn-delete:hover{
+background-color: black;
+}
+
+.btn-refresh{
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 2px 15px;
+  background-color: lightpink;
+  border-radius: 0.2rem;
+  font-size: 16px;
+  color: rgb(72, 84, 95);
+  font-weight: 500;
+  transition: 0.25s;
+  border: 2px solid black;
+display: flex;
+}
+
+.btn-refresh:hover{
+  background-color: black;
+  color: azure;
 }
