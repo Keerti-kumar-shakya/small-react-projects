@@ -1,10 +1,15 @@
 import React from 'react'
+import TourCard from './TourCard'
 
-const Tours = () => {
+const Tours = ({tourData, removeTours}) => {
+  console.log(tourData);
   return (
-    <div>
-      
-    </div>
+   <section className='tours-container'>
+    {tourData.map( (tours) => <TourCard 
+    key={tours.id} {...tours}
+    removeTours = {removeTours}
+    />)}
+   </section>
   )
 }
 
