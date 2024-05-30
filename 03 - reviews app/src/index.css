@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #f8fafc;
+}
+
+.container{
+  width: 38rem;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 5px rgb(230, 227, 227);
+  background-color: white;
+  transition: 0.25s;
+}
+
+.container:hover{
+  box-shadow: 0 5px 15px rgb(230, 227, 227);
+}
+
+.img-container{
+ margin-bottom: 25px;
+  width:160px;
+  height:155px;
+  border-radius:50%;
+  background-color:#645cff;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.image-person{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  object-fit: cover;
+  object-position:center;
+
+}
+
+.quote-img{
+  width: 50px;
+  height: 50px;
+  background-color:#645cff;
+  font-size: 22px;
+  color: white;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 0;
+}
+
+.name-occupation-container{
+  display: grid;
+  place-items:center;
+  margin-bottom: 10px;
+}
+
+.name{
+ text-transform: capitalize;
+ letter-spacing: 1px; 
+ font-size: 25px;
+ font-weight: 400;
+ padding-bottom: 5px;
+}
+
+.occupation{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  color: #645cff;
+}
+
+.desc{
+color: rgb(82, 69, 69);
+line-height: 24px;
+letter-spacing: 0.3px;
+text-align: center;
+margin-bottom: 10px;
+}
+
+.btn-inc-dec-container{
+  display: flex;
+  column-gap: 25px;
+  margin-bottom: 20px;
+}
+
+.decrease, .increase{
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: #3c3799;
+  transition: 0.25s;
+}
+
+.decrease:hover, .increase:hover{
+  color: #645cff;
+}
+
+.btn-surprise{
+  font-size: 14px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 4px 12px;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: #bfbbff;
+  color: #443bfd;
+  transition: 0.25s;
+}
+
+.btn-surprise:hover{
+  background-color: #443bfd;
+  color: #b6b4e6;
+}
